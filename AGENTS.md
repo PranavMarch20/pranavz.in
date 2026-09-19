@@ -7,3 +7,21 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+
+# Portfolio Development Instructions
+
+Before making any changes to this project, read:
+
+PORTFOLIO_REFERENCE.md
+
+That document contains the complete design, layout, content,
+routing, project structure, and visual requirements for this portfolio.
+
+Treat it as the source of truth for the portfolio implementation.
+
+Do not redesign the site or replace its minimalist visual language
+with a generic portfolio template.
+
+When implementing or modifying a component, preserve the requirements
+defined in PORTFOLIO_REFERENCE.md.

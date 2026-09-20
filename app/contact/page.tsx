@@ -68,7 +68,7 @@ export default function ContactPage() {
                   </span>
                   <span className="flex flex-col justify-center gap-0">
                     <span className="font-medium text-foreground leading-tight">{label}</span>
-                    <span className="text-[12.5px] text-muted-foreground underline-offset-5 group-hover:text-muted-foreground group-hover:underline group-hover:[text-decoration-style:dotted] leading-tight">
+                    <span className="break-all text-[12.5px] leading-tight text-muted-foreground underline-offset-5 group-hover:text-muted-foreground group-hover:underline group-hover:[text-decoration-style:dotted]">
                       {value}
                     </span>
                   </span>

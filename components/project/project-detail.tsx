@@ -35,7 +35,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             <div className={`mt-1 flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${project.accentClassName}`}>
               <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
             </div>
-            <div>
+            <div className="min-w-0">
               <h1 className="text-2xl font-semibold leading-8 text-foreground">
                 {project.name}
               </h1>
@@ -56,7 +56,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           </a>
         </header>
 
-        <Divider />
+        <Divider className="mt-5"/>
 
         <section aria-labelledby="about">
           <SectionLabel id="about">ABOUT</SectionLabel>

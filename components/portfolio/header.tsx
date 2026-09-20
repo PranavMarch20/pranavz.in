@@ -25,13 +25,13 @@ export function Header() {
             alt="Header"
             className="size-12 rounded-md"
           />
-        <div className="flex flex-col items-start leading-6">
-          <h1 className="italic text-3xl font-medium tracking-normal text-half-muted-foreground">
+        <div className="min-w-0 flex flex-col items-start leading-6">
+          <h1 className="break-words italic text-3xl font-medium tracking-normal text-half-muted-foreground">
             Pranav Kumar Singh 
             {" "}
-            <span className="text-xl font-normal text-muted-foreground">aka</span>
+            <span className="hidden sm:inline text-xl font-normal text-muted-foreground">aka</span>
             {" "}
-            <span className="text-xl font-normal">Raunak</span>
+            <span className="hidden sm:inline text-xl font-normal">Raunak</span>
           </h1>
 
           <p className="text-[15px] font-medium leading-[24.375px] text-stone-400">
@@ -47,7 +47,7 @@ export function Header() {
       <nav aria-label="Primary navigation" className="mt-4">
         <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[14px] leading-[22.75px]">
           <div className="flex flex-col">
-            <div className="flex gap-x-4 gap-y-2">
+            <div className="flex flex-wrap gap-x-4 gap-y-2">
               {navigation[0].map(({ href, Icon, label }) => (
                 <li key={label}>
                   <Link

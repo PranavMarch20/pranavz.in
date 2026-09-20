@@ -20,7 +20,7 @@ export function Footer() {
           </a>
           <span className="ml-1 text-muted-foreground flex flex-col">
             {/* © {new Date().getFullYear()} All rights reserved.{" "} */}
-            <p>
+            <p className="flex justify-center gap-1.5">
               <a
                 title="See sitemap"
                 href="/sitemap.xml"

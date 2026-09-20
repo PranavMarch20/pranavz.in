@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Send } from "lucide-react";
+import { Check, Loader2, Send } from "lucide-react";
 
 export function ContactForm() {
 
@@ -81,7 +81,7 @@ export function ContactForm() {
             id="email"
             name="email"
             type="email"
-            placeholder="you@example.com"
+            placeholder="you@gmail.com"
             required
             className="w-full rounded-lg border border-stone-300 bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
           />
@@ -119,7 +119,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={isSending || status === "success"}
-        className="inline-flex items-center gap-2 rounded-lg bg-link cursor-pointer px-4 py-2 text-[14px] font-medium leading-[22.75px] text-white transition-colors hover:bg-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus disabled:cursor-not-allowed disabled:opacity-60"
+        className="inline-flex min-w-[154px] min-h-[40px] items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-2 rounded-lg bg-linear-to-b from-blue-400 to-blue-600 align-middle cursor-pointer px-4 py-2 text-[14px] font-medium leading-[22.75px] text-white transition-colors hover:bg-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus disabled:cursor-not-allowed disabled:opacity-60 ring-1 ring-white/30 ring-offset-1 ring-offset-blue-500/50 ring-inset"
       >
         {status === "success" ? (
           <>
@@ -128,8 +128,8 @@ export function ContactForm() {
           </>
         ) : (
           <>
-            <Send aria-hidden="true" className="size-4" />
-            {isSending ? "Sending..." : "Send message"}
+            {isSending ? "" : <Send aria-hidden="true" className="size-4" />}
+            {isSending ? <Loader2 className="size-4 animate-spin"/>  : "Send message"}
           </>
         )}
       </button>

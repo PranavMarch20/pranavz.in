@@ -40,7 +40,7 @@ export default function ContactPage() {
             href="/"
             className="group inline-flex items-center gap-1 mb-8 text-[14px] font-medium text-nav-link"
           >
-            <ArrowLeft aria-hidden="true" className="size-4" />
+            <ArrowLeft aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
             <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
           </Link>
           <h1 className="text-2xl font-semibold leading-8 text-foreground">
@@ -63,7 +63,7 @@ export default function ContactPage() {
                   rel={label === "Email" ? undefined : "noopener noreferrer"}
                   className="group inline-flex items-center gap-2 text-[14px] leading-[22.75px]"
                 >
-                  <span className={`flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${accentClassName}`}>
+                  <span className={`flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${accentClassName} ring-2 ring-white/30 ring-offset-2 ring-offset-[${accentClassName}]/90 ring-inset`}>
                     <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
                   </span>
                   <span className="group flex flex-col justify-center gap-0">

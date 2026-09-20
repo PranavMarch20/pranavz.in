@@ -27,7 +27,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             href="/"
             className="group inline-flex items-center gap-1 text-[14px] font-medium text-nav-link"
           >
-            <ArrowLeft aria-hidden="true" className="size-4" />
+            <ArrowLeft aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
             <span className="inline-flex leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
           </Link>
 
@@ -46,13 +46,14 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           </div>
 
           <a
+            title="View on Github"
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
             className="group mt-5 inline-flex items-center gap-1 text-[14px] font-medium text-nav-link"
           >
             <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">GitHub</span>
-            <ExternalLink aria-hidden="true" className="size-3.5" />
+            <ExternalLink aria-hidden="true" className="size-3.5 mb-0.5" />
           </a>
         </header>
 

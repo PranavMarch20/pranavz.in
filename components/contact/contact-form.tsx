@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Check, Send } from "lucide-react";
 
 export function ContactForm() {
 
@@ -39,6 +39,10 @@ export function ContactForm() {
 
       form.reset();
       setStatus("success");
+
+      setTimeout(() => {
+        setStatus("idle");
+      }, 3000);
       
     } catch (error) {
       console.error(error);
@@ -114,24 +118,21 @@ export function ContactForm() {
 
       <button
         type="submit"
-        disabled={isSending}
+        disabled={isSending || status === "success"}
         className="inline-flex items-center gap-2 rounded-lg bg-link cursor-pointer px-4 py-2 text-[14px] font-medium leading-[22.75px] text-white transition-colors hover:bg-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus disabled:cursor-not-allowed disabled:opacity-60"
       >
-        <Send aria-hidden="true" className="size-4" />
-        {isSending ? "Sending..." : "Send message"}
+        {status === "success" ? (
+          <>
+            <Check aria-hidden="true" className="size-4" />
+            Email sent !
+          </>
+        ) : (
+          <>
+            <Send aria-hidden="true" className="size-4" />
+            {isSending ? "Sending..." : "Send message"}
+          </>
+        )}
       </button>
-
-      {status === "success" && (
-        <p className="text-[14px] text-green-600">
-          Message sent successfully. I&apos;ll get back to you soon.
-        </p>
-      )}
-
-      {status === "error" && (
-        <p className="text-[14px] text-red-600">
-          Something went wrong. Please try again or email me directly.
-        </p>
-      )}
     </form>
   );
 }

@@ -23,7 +23,7 @@ export function Footer() {
             <p>
               <a
                 title="See sitemap"
-                href="/sitemap"
+                href="/sitemap.xml"
                 className="hover:underline hover:underline-offset-4 hover:text-foreground transition-colors hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 target="_blank"
                 rel="noopener noreferrer"

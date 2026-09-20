@@ -1,0 +1,28 @@
+import type { Education } from "@/data/education";
+
+type EducationItemProps = {
+  education: Education;
+};
+
+export function EducationItem({ education }: EducationItemProps) {
+  return (
+    <li className="grid gap-2 sm:grid-cols-[1fr_auto] sm:gap-8">
+      <div className="min-w-0">
+        <h3 className="text-[15px] font-medium leading-[24.375px] text-foreground">
+          {education.institution}
+        </h3>
+        <p className="text-[14px] font-normal leading-[22.75px] text-muted-foreground">
+          {education.qualification}
+        </p>
+        <p className="text-[14px] font-normal leading-[22.75px] text-muted-foreground">
+          {education.location}
+        </p>
+      </div>
+
+      <div className="font-mono text-[12px] font-normal leading-[22.75px] text-muted-foreground sm:text-right">
+        <p>{education.duration}</p>
+        <p>{education.score}</p>
+      </div>
+    </li>
+  );
+}

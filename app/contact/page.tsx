@@ -38,10 +38,10 @@ export default function ContactPage() {
         <header className="pt-7 sm:pt-16">
           <Link
             href="/"
-            className="inline-flex items-center gap-1 pb-8 text-[14px] font-medium text-nav-link underline-offset-4 transition-colors hover:text-muted-foreground hover:underline hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="group inline-flex items-center gap-1 mb-8 text-[14px] font-medium text-nav-link"
           >
             <ArrowLeft aria-hidden="true" className="size-4" />
-            Back
+            <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
           </Link>
           <h1 className="text-2xl font-semibold leading-8 text-foreground">
             Contact / Hire Me
@@ -51,7 +51,7 @@ export default function ContactPage() {
           </p>
         </header>
 
-        <Divider className="mb-5"/>
+        <Divider className="!mb-7 mt-4"/>
 
         <section aria-label="Contact links">
           <ul className="space-y-2 flex flex-wrap gap-3">
@@ -66,9 +66,9 @@ export default function ContactPage() {
                   <span className={`flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${accentClassName}`}>
                     <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
                   </span>
-                  <span className="flex flex-col justify-center gap-0">
+                  <span className="group flex flex-col justify-center gap-0">
                     <span className="font-medium text-foreground leading-tight">{label}</span>
-                    <span className="break-all text-[12.5px] leading-tight text-muted-foreground underline-offset-5 group-hover:text-muted-foreground group-hover:underline group-hover:[text-decoration-style:dotted]">
+                    <span className="break-all text-[12.5px] text-muted-foreground leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">
                       {value}
                     </span>
                   </span>

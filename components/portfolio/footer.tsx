@@ -14,17 +14,17 @@ export function Footer() {
           Built by Pranav Kumar Singh{" ~ "}
           <a
             href="mailto:pranavmarch20@gmail.com"
-            className="hover:underline hover:underline-offset-4 hover:text-foreground transition-colors hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
             pranavmarch20@gmail.com
           </a>
-          <span className="ml-1 text-muted-foreground flex flex-col">
+          <span className="ml-1 text-muted-foreground flex flex-col mt-0.5">
             {/* © {new Date().getFullYear()} All rights reserved.{" "} */}
             <p className="flex justify-center gap-1.5">
               <a
                 title="See sitemap"
                 href="/sitemap.xml"
-                className="hover:underline hover:underline-offset-4 hover:text-foreground transition-colors hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ export function Footer() {
               <a
                 title="Fork this on Github"
                 href="https://github.com/PranavMarch20/pranavz.in"
-                className="hover:underline hover:underline-offset-4 hover:text-foreground transition-colors hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -44,8 +44,7 @@ export function Footer() {
               <a
                 title="Contact me"
                 href="/contact"
-                className="hover:underline hover:underline-offset-4 hover:text-foreground transition-colors hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"              
-                target="_blank"
+                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 rel="noopener noreferrer"
               >
                 Hire me
@@ -64,6 +63,7 @@ export function Footer() {
                   aria-label={label}
                   className="inline-flex size-7 items-center justify-center text-muted-foreground transition-colors hover:text-foreground transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Icon aria-hidden="true" className="size-[17px] stroke-[2.2]" />
                 </a>

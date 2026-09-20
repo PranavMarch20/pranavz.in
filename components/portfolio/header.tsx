@@ -1,4 +1,5 @@
 import { UserRound, Birdhouse, Mailbox, CodeXml } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon } from "./icons";
 import { Divider } from "./divider";
@@ -20,18 +21,21 @@ export function Header() {
   return (
     <header className="pt-7 sm:pt-16">
       <div className="flex items-center gap-4">
-          <img
+          <Image
             src="/header-image.png"
-            alt="Header"
-            className="size-12 rounded-md"
+            alt="Pranav Kumar Singh"
+            width={48}
+            height={48}
+            priority
+            className="size-12 rounded-md aspect-square shadow-2xl"
           />
         <div className="min-w-0 flex flex-col items-start leading-6">
-          <h1 className="break-words italic text-3xl font-medium tracking-normal text-half-muted-foreground">
+          <h1 className="break-words italic sm:not-italic text-3xl font-medium tracking-normal text-half-muted-foreground">
             Pranav Kumar Singh 
             {" "}
-            <span className="hidden sm:inline text-xl font-normal text-muted-foreground">aka</span>
+            <span className="hidden italic sm:inline text-xl font-normal text-stone-400">aka</span>
             {" "}
-            <span className="hidden sm:inline text-xl font-normal">Raunak</span>
+            <span className="hidden italic sm:inline text-xl font-normal">Raunak</span>
           </h1>
 
           <p className="text-[15px] font-medium leading-[24.375px] text-stone-400">
@@ -42,39 +46,44 @@ export function Header() {
         
       </div>
 
-      <Divider className="!my-2 max-w-[470px]"/>
+      <Divider className="!my-3 max-w-[470px]"/>
  
       <nav aria-label="Primary navigation" className="mt-4">
         <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[14px] leading-[22.75px]">
-          <div className="flex flex-col">
-            <div className="flex flex-wrap gap-x-4 gap-y-2">
+          <li className="flex flex-col">
+            <ul className="flex flex-wrap gap-x-4 gap-y-2">
               {navigation[0].map(({ href, Icon, label }) => (
                 <li key={label}>
                   <Link
                     href={href}
-                    className="inline-flex items-center gap-1 font-medium text-nav-link underline-offset-4 transition-colors hover:text-muted-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus hover:[text-decoration-style:dotted]"
+                    className="group inline-flex items-center gap-1 font-medium text-nav-link transition-colors hover:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                   >
-                    <Icon aria-hidden="true" className="size-[16px] stroke-[2.2]" />
-                    <span>{label}</span>
+                    <Icon aria-hidden="true" className="size-[16px] stroke-[2.2] mb-0.5" />
+                    <span className="inline-block leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors">
+                      {label}
+                    </span>
                   </Link>
                 </li>
               ))}
-            </div>
-            <div className="flex gap-x-4 gap-y-2">
+            </ul>
+            <ul className="flex flex-wrap gap-x-4 gap-y-2">
               {navigation[1].map(({ href, Icon, label }) => (
                 <li key={label}>
                   <Link
                     href={href}
-                    className="inline-flex items-center gap-1 font-medium text-nav-link underline-offset-4 transition-colors hover:text-muted-foreground hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus hover:[text-decoration-style:dotted]"
+                    className="group inline-flex items-center gap-1 font-medium text-nav-link transition-colors hover:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Icon aria-hidden="true" className="size-[16px] stroke-[2.2]" />
-                    <span>{label}</span>
+                    <Icon aria-hidden="true" className="size-[16px] stroke-[2.2] mb-0.5" />
+                    <span className="inline-block leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors">
+                      {label}
+                    </span>
                   </Link>
                 </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </li>
      
         </ul>
       </nav>

@@ -13,7 +13,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
   return (
     <li className="flex gap-4">
       <div
-        className={`flex size-9 shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${project.accentClassName}`}
+        className={`flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${project.accentClassName}`}
       >
         <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
       </div>
@@ -23,12 +23,12 @@ export function ProjectItem({ project }: ProjectItemProps) {
           <Link
           title="View on Github"
             href={project.github}
-            className="inline-flex flex-wrap items-center gap-1 text-[14px] underline-offset-4 transition-all hover:text-muted-foreground hover:underline hover:underline-muted-foregorund hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="group inline-flex flex-wrap items-center gap-1 text-[15px] transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
-            <span>{project.name}</span>
+            <span className="inline-block leading-5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors">{project.name}</span>
             <ExternalLink
               aria-hidden="true"
-              className="size-[14px] text-muted-foreground mb-1"
+              className="size-[14px] text-muted-foreground mb-0.5"
             />
           </Link>
         </h3>
@@ -38,9 +38,10 @@ export function ProjectItem({ project }: ProjectItemProps) {
         <Link
           title="More about project"
           href={project.href}
-          className="mt-2 inline-flex items-center gap-1 text-[14px] font-normal leading-[22.75px] text-link underline-offset-4 transition-all hover:text-link-hover hover:underline hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+          className=" group mt-2 inline-flex items-center gap-1 text-[14px] font-normal leading-[22.75px] text-link transition-colors hover:text-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
         >
-          <span className="font-normal">View details</span> <span><MoveRight className="size-4 stroke-[1.2]"/></span>
+          <span className="font-normal inline-block leading-4.5 border-b-2 border-dotted border-transparent group-hover:border-link/80 transition-colors">View details</span>
+          <span> <MoveRight className="size-4 stroke-[1.2]"/> </span>
         </Link>
       </div>
     </li>

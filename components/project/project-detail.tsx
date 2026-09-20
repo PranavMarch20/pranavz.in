@@ -25,10 +25,10 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         <header className="pt-7 sm:pt-16">
           <Link
             href="/"
-            className="inline-flex items-center gap-1 text-[14px] font-medium text-nav-link underline-offset-4 transition-colors hover:text-muted-foreground hover:underline hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="group inline-flex items-center gap-1 text-[14px] font-medium text-nav-link"
           >
             <ArrowLeft aria-hidden="true" className="size-4" />
-            Back
+            <span className="inline-flex leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
           </Link>
 
           <div className="mt-8 flex items-start gap-4">
@@ -49,9 +49,9 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 inline-flex items-center gap-1 text-[14px] font-medium text-nav-link underline-offset-4 transition-colors hover:text-muted-foreground hover:underline hover:[text-decoration-style:dotted] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="group mt-5 inline-flex items-center gap-1 text-[14px] font-medium text-nav-link"
           >
-            GitHub
+            <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">GitHub</span>
             <ExternalLink aria-hidden="true" className="size-3.5" />
           </a>
         </header>

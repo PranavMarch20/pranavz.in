@@ -19,8 +19,8 @@ export function EducationItem({ education }: EducationItemProps) {
         </p>
       </div>
 
-      <div className="font-mono text-[12px] font-normal leading-[22.75px] text-muted-foreground sm:text-right">
-        <p>{education.duration}</p>
+      <div className="flex-col flex-nowrap font-mono text-[12px] font-normal leading-[22.75px] text-muted-foreground sm:text-right">
+        <p className="inline-flex pt-1.5 sm:pt-0 border-t-2 border-dotted border-divider sm:border-t-0">{education.duration}</p>
         <p>{education.score}</p>
       </div>
     </li>

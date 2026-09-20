@@ -20,7 +20,7 @@ export function GitHubIcon(props: SVGProps<SVGSVGElement>) {
 export function LinkedInIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
-      viewBox="4 5 17 16"
+      viewBox="4 5 17 17"
       fill="none"
       stroke="currentColor"
       strokeWidth="2"

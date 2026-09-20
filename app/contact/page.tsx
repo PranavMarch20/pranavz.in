@@ -1,4 +1,4 @@
-import { ArrowLeft, Mailbox } from "lucide-react";
+import { ArrowLeft, Mail } from "lucide-react";
 import Link from "next/link";
 
 import { ContactForm } from "@/components/contact/contact-form";
@@ -12,8 +12,8 @@ const contactLinks = [
     label: "Email",
     value: "pranavmarch20@gmail.com",
     href: "mailto:pranavmarch20@gmail.com",
-    Icon: Mailbox,
-    accentClassName: "bg-orange-500",
+    Icon: Mail,
+    accentClassName: "bg-orange-600",
   },
   {
     label: "LinkedIn",
@@ -27,7 +27,7 @@ const contactLinks = [
     value: "github.com/pranavmarch20",
     href: "https://github.com/pranavmarch20",
     Icon: GitHubIcon,
-    accentClassName: "bg-indigo-500",
+    accentClassName: "bg-slate-700",
   },
 ];
 

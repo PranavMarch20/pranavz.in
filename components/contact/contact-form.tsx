@@ -1,11 +1,57 @@
 "use client";
 
+import { useState } from "react";
 import { Send } from "lucide-react";
 
 export function ContactForm() {
+
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    setIsSending(true);
+    setStatus("idle");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      form.reset();
+      setStatus("success");
+      
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    } finally {
+      setIsSending(false);
+    }
+  }
+
+
   return (
     <form
-      onSubmit={(event) => event.preventDefault()}
+      onSubmit={handleSubmit}
       className="mt-5 space-y-4"
     >
       <div className="grid gap-4 sm:grid-cols-2">
@@ -68,11 +114,24 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="inline-flex items-center gap-2 rounded-lg bg-link px-4 py-2 text-[14px] font-medium leading-[22.75px] text-white transition-colors hover:bg-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+        disabled={isSending}
+        className="inline-flex items-center gap-2 rounded-lg bg-link cursor-pointer px-4 py-2 text-[14px] font-medium leading-[22.75px] text-white transition-colors hover:bg-link-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus disabled:cursor-not-allowed disabled:opacity-60"
       >
         <Send aria-hidden="true" className="size-4" />
-        Send message
+        {isSending ? "Sending..." : "Send message"}
       </button>
+
+      {status === "success" && (
+        <p className="text-[14px] text-green-600">
+          Message sent successfully. I&apos;ll get back to you soon.
+        </p>
+      )}
+
+      {status === "error" && (
+        <p className="text-[14px] text-red-600">
+          Something went wrong. Please try again or email me directly.
+        </p>
+      )}
     </form>
   );
 }

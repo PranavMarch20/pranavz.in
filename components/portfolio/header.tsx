@@ -56,7 +56,7 @@ export function Header() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className={`group inline-flex items-center gap-1 font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus ${href === "/" ? "text-foreground" : "text-nav-link"}`}
+                    className={`group inline-flex items-center gap-1 font-medium text-nav-link transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus`}
                
                   >
                     <Icon aria-hidden="true" className="size-[16px] stroke-[2.2] mb-0.5" />

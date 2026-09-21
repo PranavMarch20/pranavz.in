@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Schibsted_Grotesk, Space_Mono } from "next/font/google";
 
 import "./globals.css";
+import { Header } from "@/components/common/header";
+import { Footer } from "@/components/common/footer";
+import { Divider } from "@/components/common/divider";
 
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
@@ -109,8 +112,15 @@ export default function RootLayout({
       lang="en"
       className={`${schibstedGrotesk.variable} ${spaceMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        {children}
+      <body className="min-h-screen flex flex-col">
+        <div className="w-full max-w-[680px] mx-auto flex-1">
+          <Header />
+          <div className="pt-8">
+            {children}
+          </div>
+          <Divider />
+          <Footer />
+        </div>
       </body>
     </html>
   );

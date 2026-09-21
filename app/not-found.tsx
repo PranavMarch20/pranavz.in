@@ -4,14 +4,14 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <main className="mx-auto flex min-h-[70vh] w-full max-w-[670px] items-center px-5">
-      <div>
-        <p className="font-mono text-3xl uppercase tracking-wider text-muted-foreground">
+    <main className="mx-auto mt-8 flex min-h-[56vh] w-full max-w-[670px] justify-center items-center px-5">
+      <div className="flex flex-col items-center">
+        <p className="font-mono text-7xl uppercase tracking-wider text-muted-foreground">
           404
         </p>
 
         <h1 className="mt-1 text-2xl font-semibold text-foreground">
-          Page not found.
+          Page not found or it does'nt exist.
         </h1>
 
         <Image
@@ -24,7 +24,7 @@ export default function NotFound() {
         />
   
   
-        <p className="mt-10 text-[15px] leading-[1.625] text-muted-foreground">
+        {/* <p className="mt-10 text-[15px] leading-[1.625] text-muted-foreground">
           Ghar ja k sutti babu!
         </p>
         <p className="mt-1 text-[15px] leading-[1.625] text-muted-foreground">
@@ -32,7 +32,7 @@ export default function NotFound() {
         </p>
         <p className="mt-1 text-[15px] leading-[1.625] text-muted-foreground">
           wapas jaiye Home: The main page par ... neeche button click kariye
-        </p>
+        </p> */}
 
         <Link
           href="/"

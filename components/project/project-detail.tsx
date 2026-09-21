@@ -1,9 +1,9 @@
 import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
-import { Divider } from "@/components/portfolio/divider";
-import { Footer } from "@/components/portfolio/footer";
-import { SectionLabel } from "@/components/portfolio/section-label";
+import { Divider } from "@/components/common/divider";
+import { Footer } from "@/components/common/footer";
+import { SectionLabel } from "@/components/home/section-label";
 import type { Project } from "@/data/projects";
 
 type ProjectDetailProps = {
@@ -20,8 +20,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
   const Icon = project.Icon;
 
   return (
-    <main className="min-h-screen px-5 sm:px-6">
-      <div className="mx-auto w-full max-w-[670px]">
+    <div className="px-5 sm:px-6">
         <header className="pt-7 sm:pt-16">
           <Link
             href="/"
@@ -97,9 +96,6 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           </dl>
         </section>
 
-        <Divider />
-        <Footer />
-      </div>
-    </main>
+    </div>
   );
 }

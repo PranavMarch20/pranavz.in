@@ -7,7 +7,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="pb-10 pt-6 flex flex-col items-center gap-4 text-center text-[13px] leading-5 text-muted-foreground sm:pb-12">
+    <footer className="pb-10 pt-6 flex flex-col items-center gap-4 text-center text-[13px] leading-5 text-muted-foreground sm:pb-12 px-5 sm:px-6">
       <PranavSignature className="w-28 h-auto"/>
       <div>
         <div>

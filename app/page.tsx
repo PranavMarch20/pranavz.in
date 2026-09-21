@@ -1,18 +1,18 @@
-import { AchievementsSection } from "@/components/portfolio/achievements-section";
-import { Divider } from "@/components/portfolio/divider";
-import { EducationSection } from "@/components/portfolio/education-section";
-import { Footer } from "@/components/portfolio/footer";
-import { Header } from "@/components/portfolio/header";
-import { Intro } from "@/components/portfolio/intro";
-import { ProjectsSection } from "@/components/portfolio/projects-section";
-import { SectionLabel } from "@/components/portfolio/section-label";
-import { SkillsSection } from "@/components/portfolio/skills-section";
+import { AchievementsSection } from "@/components/home/achievements-section";
+import { Divider } from "@/components/common/divider";
+import { EducationSection } from "@/components/home/education-section";
+import { Footer } from "@/components/common/footer";
+import { HomeHeader } from "@/components/home/home-header";
+import { Intro } from "@/components/home/intro";
+import { ProjectsSection } from "@/components/home/projects-section";
+import { SectionLabel } from "@/components/home/section-label";
+import { SkillsSection } from "@/components/home/skills-section";
 
 export default function Home() {
   return (
     <main className="min-h-screen px-5 sm:px-6">
-      <div className="mx-auto w-full max-w-[670px]">
-        <Header />
+      <div>
+        <HomeHeader />
 
         <div className="pt-12">
           <Intro />
@@ -54,8 +54,6 @@ export default function Home() {
           </div>
         </section>
 
-        <Divider />
-        <Footer />
       </div>
     </main>
   );

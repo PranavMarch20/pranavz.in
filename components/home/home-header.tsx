@@ -1,25 +1,19 @@
 import { UserRound, Birdhouse, Mailbox, CodeXml } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { GitHubIcon, LinkedInIcon } from "./icons";
-import { Divider } from "./divider";
+import { GitHubIcon, LinkedInIcon } from "../common/icons";
+import { Divider } from "../common/divider";
 
 const navigation = [
-  [
-    { label: "Home", href: "/", Icon: Birdhouse },
-    { label: "Contact", href: "/contact", Icon: UserRound },
-  ],
-  [
     { label: "GitHub", href: "https://github.com/pranavmarch20", Icon: GitHubIcon },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/pranvmarch20", Icon: LinkedInIcon },
     { label: "Email", href: "mailto:pranavmarch20@gmail.com", Icon: Mailbox },
     { label: "Codolio", href: "https://codolio.com/profile/pranavmarch20", Icon: CodeXml },
-  ]
 ];
 
-export function Header() {
+export function HomeHeader() {
   return (
-    <header className="pt-7 sm:pt-16">
+    <header className="pt-7 sm:pt-14">
       <div className="flex items-center gap-4">
           <Image
             src="/header-image.png"
@@ -52,23 +46,7 @@ export function Header() {
         <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[14px] leading-[22.75px]">
           <li className="flex flex-col">
             <ul className="flex flex-wrap gap-x-4 gap-y-2">
-              {navigation[0].map(({ href, Icon, label }) => (
-                <li key={label}>
-                  <Link
-                    href={href}
-                    className={`group inline-flex items-center gap-1 font-medium text-nav-link transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus`}
-               
-                  >
-                    <Icon aria-hidden="true" className="size-[16px] stroke-[2.2] mb-0.5 transition-transform duration-200 group-hover:-translate-y-0.5" />
-                    <span className={`inline-block leading-4.5 border-b-2 border-dotted transition-colors ${href === "/" ? "border-stone-400" : "border-transparent group-hover:border-stone-400"}`}>
-                      {label}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <ul className="flex flex-wrap gap-x-4 gap-y-2">
-              {navigation[1].map(({ href, Icon, label }) => (
+              {navigation.map(({ href, Icon, label }) => (
                 <li key={label}>
                   <Link
                     href={href}

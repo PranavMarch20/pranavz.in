@@ -6,6 +6,9 @@ import { Header } from "@/components/common/header";
 import { Footer } from "@/components/common/footer";
 import { Divider } from "@/components/common/divider";
 
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
   subsets: ["latin"],
@@ -121,6 +124,9 @@ export default function RootLayout({
           <Divider />
           <Footer />
         </div>
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

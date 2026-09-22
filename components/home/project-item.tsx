@@ -27,7 +27,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
               className="group inline-flex flex-wrap items-center gap-1 text-[15px] transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
               target="_blank"
               >
-              <Tooltip message={"Got to github"}>
+              <Tooltip message={"Go to github"}>
                 <span className="inline-flex items-center gap-1 pt-0.5 leading-5">
                   {project.name}
                   <ExternalLink

@@ -11,7 +11,7 @@ import { SkillsSection } from "@/components/home/skills-section";
 export default function Home() {
   return (
     <main className="min-h-screen px-5 sm:px-6">
-      <div>
+      <div className="mt-5 sm:mt-0">
         <HomeHeader />
 
         <div className="pt-12">

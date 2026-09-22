@@ -34,14 +34,14 @@ const contactLinks = [
 export default function ContactPage() {
   return (
     <div className="px-5 sm:px-6">
-      <div className="pt-7 sm:pt-16">
-          <Link
+      <div className="pt-12 sm:pt-14">
+          {/* <Link
             href="/"
             className="group inline-flex items-center gap-1 mb-8 text-[14px] font-medium text-nav-link"
           >
             <ArrowLeft aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
             <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
-          </Link>
+          </Link> */}
           <h1 className="text-2xl font-semibold leading-8 text-foreground">
             Contact / Hire Me
           </h1>

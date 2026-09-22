@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function NotFound() {
   return (
-    <main className="mx-auto mt-8 flex min-h-[56vh] w-full max-w-[670px] justify-center items-center px-5">
+    <main className="mx-auto mt-8 pt-12 flex min-h-[56vh] w-full max-w-[670px] justify-center items-center px-5">
       <div className="flex flex-col items-center">
         <p className="font-mono text-7xl uppercase tracking-wider text-muted-foreground">
           404
         </p>
 
-        <h1 className="mt-1 text-2xl font-semibold text-foreground">
+        <h1 className="mt-1 text-2xl font-semibold text-foreground text-center">
           Page not found or it does'nt exist.
         </h1>
 

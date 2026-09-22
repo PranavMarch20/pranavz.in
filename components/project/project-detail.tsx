@@ -21,17 +21,11 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
   return (
     <div className="px-5 sm:px-6">
-        <header className="pt-7 sm:pt-16">
-          <Link
-            href="/"
-            className="group inline-flex items-center gap-1 text-[14px] font-medium text-nav-link"
-          >
-            <ArrowLeft aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
-            <span className="inline-flex leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
-          </Link>
+        <header className="pt-4 sm:pt-6">
+        
 
           <div className="mt-8 flex items-start gap-4">
-            <div className={`mt-1 flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${project.accentClassName}`}>
+            <div className={`flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${project.accentClassName} ring-2 ring-white/30 ring-offset-2 ring-offset-[${project.accentClassName}]/90 ring-inset`}>
               <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
             </div>
             <div className="min-w-0">

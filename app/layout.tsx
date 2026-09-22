@@ -121,7 +121,7 @@ export default function RootLayout({
           <div className="pt-8">
             {children}
           </div>
-          <Divider />
+          <Divider className="mx-5 sm:mx-6"/>
           <Footer />
         </div>
 

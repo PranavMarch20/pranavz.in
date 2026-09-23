@@ -8,6 +8,7 @@ import { Divider } from "@/components/common/divider";
 
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { ThemeProvider } from "@/components/common/theme-provider";
 
 const schibstedGrotesk = Schibsted_Grotesk({
   variable: "--font-schibsted-grotesk",
@@ -121,18 +122,21 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${schibstedGrotesk.variable} ${spaceMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col">
-        <div className="w-full max-w-[680px] mx-auto flex-1">
-          <Header />
-          <div className="pt-8">
-            {children}
+        <ThemeProvider>
+          <div className="w-full max-w-[680px] mx-auto flex-1">
+            <Header />
+            <div className="pt-8">
+              {children}
+            </div>
+            
           </div>
-          
-        </div>
-        <Divider className="mb-0"/>
-        <Footer />
+          <Divider className="mb-0"/>
+          <Footer />
+        </ThemeProvider>
 
         <Analytics />
         <SpeedInsights />

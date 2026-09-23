@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { UserRound, Birdhouse, FolderDot } from "lucide-react";
 import Link from "next/link";
+import { ThemeToggle } from "./theme-toggle";
 
 const navigation = [
     { label: "Home", href: "/", Icon: Birdhouse },
@@ -14,7 +15,7 @@ export function Header() {
   const pathname = usePathname();
   
   return (
-      <header className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[680px] pt-1 pb-0.5 sm:pt-2 isolate z-40">
+      <header className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[680px] pt-1 pb-0.5 sm:pt-2 isolate z-40 flex justify-between">
         <div 
         className="absolute inset-0 -z-10 bg-background backdrop-blur-md [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]" 
         aria-hidden="true"
@@ -60,6 +61,7 @@ export function Header() {
                 </li>
             </ul>
         </nav>
+        <ThemeToggle />
     </header>
   );
 }

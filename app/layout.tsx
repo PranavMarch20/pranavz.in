@@ -134,7 +134,7 @@ export default function RootLayout({
             </div>
             
           </div>
-          <Divider className="mb-0"/>
+          <Divider className="mt-26 mb-0"/>
           <Footer />
         </ThemeProvider>
 

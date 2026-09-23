@@ -95,7 +95,10 @@ const quotesList = [
 ];
 
 export function Quote() {
-    const [quote, setQuote] = useState(quotesList[0]);
+    const [quote, setQuote] = useState({
+        quoteLine: "",
+        quoteBy: "",
+    });
 
     useEffect(() => {
         const randomIndex = Math.floor(Math.random() * quotesList.length);
@@ -107,7 +110,7 @@ export function Quote() {
             {quote && (
                 <div
                     key={quote.quoteLine}
-                    className="relative flex flex-col px-4 py-9  rounded-xl shadow-xs border border-2 border-accent/40 ring-1 ring-white/30 ring-offset-3 ring-offset-muted-foreground/7 ring-inset"
+                    className="relative flex flex-col px-4 py-9 rounded-xl shadow-xs border border-dotted border-2 border-accent/40 ring-2 ring-foreground/5 ring-offset-2 ring-offset-muted-foreground/7 ring-inset"
                 >
                     <DoubleQuotes className="absolute size-32 select-none left-2 top-1/2 -translate-y-1/2 text-accent/20"/>
                     

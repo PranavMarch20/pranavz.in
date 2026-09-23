@@ -28,12 +28,12 @@ export function HomeHeader() {
           <h1 className="break-words italic sm:not-italic text-2xl sm:text-3xl font-medium tracking-normal text-half-muted-foreground">
             Pranav Kumar Singh
             {" "}
-            <span className="hidden italic sm:inline text-xl font-normal text-stone-400">aka</span>
+            <span className="hidden italic sm:inline text-xl font-normal text-accent">aka</span>
             {" "}
             <span className="hidden italic sm:inline text-xl font-normal">Raunak</span>
           </h1>
 
-          <p className="text-[14px] sm:text-[15px] font-medium leading-[24.375px] text-stone-400">
+          <p className="text-[14px] sm:text-[15px] font-medium leading-[24.375px] text-accent">
             Full Stack &amp; Backend Developer
           </p>
         </div>
@@ -55,7 +55,7 @@ export function HomeHeader() {
                       rel="noopener noreferrer"
                     >
                       <Icon aria-hidden="true" className="size-[18px] stroke-[2.2] mb-0.5 transition-transform duration-200 group-hover:-translate-y-0.5" />
-                      {/* <span className="inline-block leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors">
+                      {/* <span className="inline-block leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-accent transition-colors">
                         {label}
                       </span> */}
                     </Link>

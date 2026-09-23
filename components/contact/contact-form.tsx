@@ -69,7 +69,7 @@ export function ContactForm() {
             type="text"
             placeholder="Scott Lang"
             required
-            className="w-full rounded-lg border border-stone-300 bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
+            className="w-full rounded-lg border border-muted-accent bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
           />
         </div>
 
@@ -83,7 +83,7 @@ export function ContactForm() {
             type="email"
             placeholder="you@gmail.com"
             required
-            className="w-full rounded-lg border border-stone-300 bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
+            className="w-full rounded-lg border border-muted-accent bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
           />
         </div>
       </div>
@@ -98,7 +98,7 @@ export function ContactForm() {
           type="text"
           placeholder="Freelance project, collaboration, etc."
           required
-          className="w-full rounded-lg border border-stone-300 bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
+          className="w-full rounded-lg border border-muted-accent bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
         />
       </div>
 
@@ -112,7 +112,7 @@ export function ContactForm() {
           placeholder="Tell me about your project or idea..."
           required
           rows={5}
-          className="w-full resize-y rounded-lg border border-stone-300 bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
+          className="w-full resize-y rounded-lg border border-muted-accent bg-transparent px-3 py-2 text-[14px] leading-[22.75px] text-foreground outline-none placeholder:text-muted-foreground focus:border-focus focus:ring-1 focus:ring-focus"
         />
       </div>
 

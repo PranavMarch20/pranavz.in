@@ -32,7 +32,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
               <h1 className="text-2xl font-semibold leading-8 text-foreground">
                 {project.name}
               </h1>
-              <p className="text-[15px] font-medium leading-[24.375px] text-stone-400">
+            <p className="text-[15px] font-medium leading-[24.375px] text-accent">
                 {project.subtitle}
               </p>
             </div>
@@ -45,7 +45,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             rel="noopener noreferrer"
             className="group mt-5 inline-flex items-center gap-1 text-[14px] font-medium text-nav-link"
           >
-            <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">GitHub</span>
+          <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">GitHub</span>
             <ExternalLink aria-hidden="true" className="size-3.5 mb-0.5" />
           </a>
         </header>

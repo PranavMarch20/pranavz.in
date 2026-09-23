@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Schibsted_Grotesk, Space_Mono } from "next/font/google";
+import { Schibsted_Grotesk, Space_Mono, Space_Grotesk } from "next/font/google";
 
 import "./globals.css";
 import { Header } from "@/components/common/header";
@@ -22,6 +22,14 @@ const spaceMono = Space_Mono({
   weight: ["400", "700"],
   style: ["normal"],
 });
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+});
+
 
 export const metadata: Metadata = {
   title: {
@@ -113,7 +121,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${schibstedGrotesk.variable} ${spaceMono.variable} h-full antialiased`}
+      className={`${schibstedGrotesk.variable} ${spaceMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col">
         <div className="w-full max-w-[680px] mx-auto flex-1">
@@ -121,9 +129,10 @@ export default function RootLayout({
           <div className="pt-8">
             {children}
           </div>
-          <Divider className="mx-5 sm:mx-6"/>
-          <Footer />
+          
         </div>
+        <Divider className="mb-0"/>
+        <Footer />
 
         <Analytics />
         <SpeedInsights />

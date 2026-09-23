@@ -9,7 +9,7 @@ export default function Test() {
             </p>
             <div className="flex flex-col hidden md:inline">
                 <p className="mt-5 text-[20px] font-medium leading-[1.625] text-foreground">
-                    <span className="text-4xl italic text-stone-400/70">"</span> He will win who knows when to fight and when not to fight.<span className="text-4xl italic text-stone-400/70">"</span>
+                    <span className="text-4xl italic text-accent/70">"</span> He will win who knows when to fight and when not to fight.<span className="text-4xl italic text-accent/70">"</span>
                 </p>
                 <p className="italic mt-2 text-[15px] text-right pr-3 leading-[1.625] text-muted-foreground">
                     ~ Sun Tzu's The Art of War

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fafafa;
+  --background: #F9F9F9;
   --foreground: #0a0a0a;
   --muted-foreground: #696969;
   --half-muted-foreground: #57534E;
@@ -11,6 +11,10 @@
   --link: #1757df;
   --link-hover: #1d4ed8;
   --focus: #191c23;
+  --tooltip: #1c1917;
+  --accent: #A8A29E;
+  --muted-accent: #d6d3d1;
+  --select: #26282b;
 }
 
 @theme inline {
@@ -24,8 +28,12 @@
   --color-link: var(--link);
   --color-link-hover: var(--link-hover);
   --color-focus: var(--focus);
+  --color-tooltip: var(--tooltip);
+  --color-accent: var(--accent);
+  --color-muted-accent: var(--muted-accent);
   --font-sans: var(--font-schibsted-grotesk);
   --font-mono: var(--font-space-mono);
+  --font-space: var(--font-space-grotesk);
 }
 
 * {
@@ -53,6 +61,6 @@ a {
 }
 
 ::selection {
-  background: #26282b;
+  background: var(--select);
   color: var(--background);
 }

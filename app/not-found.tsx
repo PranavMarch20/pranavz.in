@@ -39,7 +39,7 @@ export default function NotFound() {
           className="group py-6 inline-flex items-center gap-2 text-[15px] text-foreground font-medium"
         >
           <ArrowLeft size={16} />
-          <span className="leading-5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors">Back home</span>
+          <span className="leading-5 border-b-2 border-transparent border-dotted group-hover:border-accent transition-colors">Back home</span>
         </Link>
       </div>
     </main>

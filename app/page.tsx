@@ -1,12 +1,12 @@
 import { AchievementsSection } from "@/components/home/achievements-section";
 import { Divider } from "@/components/common/divider";
-import { EducationSection } from "@/components/home/education-section";
-import { Footer } from "@/components/common/footer";
 import { HomeHeader } from "@/components/home/home-header";
 import { Intro } from "@/components/home/intro";
-import { ProjectsSection } from "@/components/home/projects-section";
 import { SectionLabel } from "@/components/home/section-label";
 import { SkillsSection } from "@/components/home/skills-section";
+import { ProjectsSection } from "@/components/home/projects-section";
+import { EducationSection } from "@/components/home/education-section";
+import { Quote } from "@/components/home/quote";
 
 export default function Home() {
   return (
@@ -54,6 +54,13 @@ export default function Home() {
           </div>
         </section>
 
+        <Divider />
+
+        <section aria-labelledby="education">
+          <div className="mt-6">
+            <Quote />
+          </div>
+        </section>
       </div>
     </main>
   );

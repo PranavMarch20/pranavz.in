@@ -30,12 +30,12 @@ export function Tooltip({ message, children, className }: TooltipProps) {
         group-hover/tooltip:delay-50
       `}>
         <div className={`relative flex justify-center pb-2 ${message === "GitHub" ? "ml-8" : ""}`}>
-          <span className="absolute bottom-full z-50 translate-y-2 w-max max-w-[200px] rounded-md bg-stone-900 px-3 py-1 text-[12px] tracking-wide text-background text-center break-words">
+          <span className="absolute bottom-full z-50 translate-y-2 w-max max-w-[200px] rounded-md bg-tooltip px-3 py-0.5 text-[11.5px] tracking-wide text-background text-center break-words">
             {message}
           </span>
         </div>
 
-        <div className="-mt-2 h-3 w-3 rounded-xs rotate-45 bg-stone-900"></div>
+        <div className="-mt-2 h-3 w-3 rounded-xs rotate-45 bg-tooltip"></div>
       </div>
     </div>
   );

@@ -7,14 +7,14 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="pb-10 pt-6 flex flex-col items-center gap-4 text-center text-[13px] leading-5 text-muted-foreground sm:pb-12 px-5 sm:px-6">
+    <footer className="pb-10 pt-16 flex flex-col bg-muted-foreground/1 items-center gap-4 text-center text-[13px] leading-5 text-muted-foreground sm:pb-12 px-5 sm:px-6">
       <PranavSignature className="w-28 h-auto"/>
       <div>
         <div>
           Built by Pranav Kumar Singh{" ~ "}
           <a
             href="mailto:pranavmarch20@gmail.com"
-            className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+            className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
           >
             pranavmarch20@gmail.com
           </a>
@@ -24,7 +24,7 @@ export function Footer() {
               <a
                 title="See sitemap"
                 href="/sitemap.xml"
-                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ export function Footer() {
               <a
                 title="Fork this on Github"
                 href="https://github.com/PranavMarch20/pranavz.in"
-                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -44,7 +44,7 @@ export function Footer() {
               <a
                 title="Contact me"
                 href="/contact"
-                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                className="inline-block leading-4.5 border-b-2 border-transparent border-dotted hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                 rel="noopener noreferrer"
               >
                 Hire me

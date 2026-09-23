@@ -40,7 +40,7 @@ export default function ContactPage() {
             className="group inline-flex items-center gap-1 mb-8 text-[14px] font-medium text-nav-link"
           >
             <ArrowLeft aria-hidden="true" className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
-            <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
+            <span className="leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">Back</span>
           </Link> */}
           <h1 className="text-2xl font-semibold leading-8 text-foreground">
             Contact / Hire Me
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   </span>
                   <span className="group flex flex-col justify-center gap-0">
                     <span className="font-medium text-foreground leading-tight">{label}</span>
-                    <span className="break-all text-[12px] text-muted-foreground leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-stone-400 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">
+                    <span className="break-all text-[12px] text-muted-foreground leading-4.5 border-b-2 border-transparent border-dotted group-hover:border-accent transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">
                       {value}
                     </span>
                   </span>

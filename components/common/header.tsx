@@ -47,7 +47,7 @@ export function Header() {
                                 className={`inline-block leading-4.5 border-b-2 border-dotted transition-colors ${
                                     isActive
                                     ? "border-foreground"
-                                    : "border-transparent group-hover:border-stone-400"
+                                    : "border-transparent group-hover:border-accent"
                                 }`}
                                 >
                                 {label}

@@ -18,7 +18,7 @@ export default function ProjectsPage() {
           >
             <ArrowLeft aria-hidden="true" className="size-4" />
 
-            <span className="leading-4.5 border-b-2 border-transparent border-dotted transition-colors group-hover:border-stone-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">
+            <span className="leading-4.5 border-b-2 border-transparent border-dotted transition-colors group-hover:border-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus">
               Back
             </span>
           </Link> */}

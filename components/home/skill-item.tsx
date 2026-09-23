@@ -10,7 +10,7 @@ export function SkillItem({ skill }: SkillItemProps) {
   return (
     <li className="flex gap-4">
       <div
-        className={`inline-flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl text-white ${skill.accentClassName} ring-2 ring-white/30 ring-offset-2 ring-offset-[${skill.accentClassName}]/90 ring-inset`}
+        className={`inline-flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl text-white ${skill.accentClassName} ring-2 ring-background/30 ring-offset-2 ring-offset-background/90 ring-inset`}
       >
         <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
       </div>

@@ -51,7 +51,7 @@ export default function ProjectsPage() {
                   >
                     <div className="flex items-start gap-3">
                       <span
-                        className={`flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${accentClassName} ring-2 ring-white/30 ring-offset-2 ring-offset-[${accentClassName}]/90 ring-inset`}
+                        className={`flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${accentClassName} ring-2 ring-background/30 ring-offset-2 ring-offset-background/90 ring-inset`}
                       >
                         <Icon
                           aria-hidden="true"

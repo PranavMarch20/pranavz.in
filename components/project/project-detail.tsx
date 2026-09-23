@@ -25,7 +25,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
         
 
           <div className="mt-8 flex items-start gap-4">
-            <div className={`flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${project.accentClassName} ring-2 ring-white/30 ring-offset-2 ring-offset-[${project.accentClassName}]/90 ring-inset`}>
+            <div className={`flex size-9 mt-[5px] shrink-0 items-center justify-center rounded-lg shadow-xl mt-1 text-white ${project.accentClassName} ring-2 ring-background/30 ring-offset-2 ring-offset-background/90 ring-inset`}>
               <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
             </div>
             <div className="min-w-0">

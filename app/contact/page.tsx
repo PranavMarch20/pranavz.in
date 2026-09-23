@@ -60,9 +60,9 @@ export default function ContactPage() {
                   href={href}
                   target={label === "Email" ? undefined : "_blank"}
                   rel={label === "Email" ? undefined : "noopener noreferrer"}
-                  className="group inline-flex items-center gap-1 text-[14px] leading-[22.75px]"
+                  className="group inline-flex items-center gap-1.5 text-[14px] leading-[22.75px]"
                 >
-                  <span className={`flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${accentClassName} ring-2 ring-white/30 ring-offset-2 ring-offset-[${accentClassName}]/90 ring-inset`}>
+                  <span className={`flex size-9 shrink-0 items-center justify-center rounded-lg text-white shadow-xl ${accentClassName} ring-2 ring-background/30 ring-offset-2 ring-offset-background/90 ring-inset`}>
                     <Icon aria-hidden="true" className="size-5 stroke-[2.2]" />
                   </span>
                   <span className="group flex flex-col justify-center gap-0">

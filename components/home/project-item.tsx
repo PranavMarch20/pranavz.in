@@ -52,9 +52,13 @@ export function ProjectItem({ project }: ProjectItemProps) {
           {project.shortDescription}
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          {project.homePageTechStack.map((tech) => (
-            <TechBadge key={tech}>{tech}</TechBadge>
-          ))}
+          {project.homePageTechStack.map((tech) => {
+            const TechIcon = tech.techIcon;
+
+            return (
+              <TechBadge key={tech.techName} Icon={TechIcon}><p className="max-w-0 overflow-hidden opacity-0 whitespace-nowrap transition-all duration-300 ease-out group-hover:max-w-32 group-hover:opacity-100 group-focus-visible:max-w-32 group-focus-visible:opacity-100 group-hover:delay-0 group-focus-visible:delay-0">{tech.techName}</p></TechBadge>
+            )
+          })}
         </div>
         
       </div>

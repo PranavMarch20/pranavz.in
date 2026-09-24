@@ -1,5 +1,9 @@
+import type { ComponentType, SVGProps } from "react";
+
 import { Cloud, Ticket, Video } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+
+import { AWSApiGateway, AWSDynamoDB, AWSLambda, AWSS3, BunJS, ExpressJS, HTML5, MongoDB, NextJS, NodeJS, ReactJS, ReduxIcon, SocketIO, TailwindCSS, TypeScript, WebrtcIcon } from "../components/common/icons"
 
 export type Project = {
   slug: string;
@@ -11,7 +15,10 @@ export type Project = {
   github: string;
   accentClassName: string;
   Icon: LucideIcon;
-  homePageTechStack: string[];
+  homePageTechStack: {
+    techName: string;
+    techIcon: ComponentType<SVGProps<SVGSVGElement>>;
+  }[];
   highlights: string[];
   techStack: {
     category: string;
@@ -33,12 +40,13 @@ export const projects: Project[] = [
     accentClassName: "bg-blue-500",
     Icon: Video,
     homePageTechStack: [
-      "React.js",
-      "TypeScript",
-      "Node.js",
-      "WebRTC",
-      "Socket.io",
-      "MongoDB",
+      { techName: "React.js", techIcon: ReactJS },
+      { techName: "TypeScript", techIcon: TypeScript },
+      { techName: "Tailwind CSS", techIcon: TailwindCSS },
+      { techName: "Node.js", techIcon: NodeJS },
+      { techName: "WebRTC", techIcon: WebrtcIcon },
+      { techName: "Socket.io", techIcon: SocketIO },
+      { techName: "MongoDB", techIcon: MongoDB },
     ],
     highlights: [
       "WebRTC peer-to-peer video calls with low-latency signalling via Socket.io",
@@ -68,12 +76,12 @@ export const projects: Project[] = [
     accentClassName: "bg-orange-500",
     Icon: Cloud,
     homePageTechStack: [
-      "React.js",
-      "Tailwind CSS",
-      "AWS S3",
-      "AWS Lambda",
-      "DynamoDB",
-      "API Gateway",
+      { techName: "HTML", techIcon: HTML5 },
+      { techName: "Tailwind CSS", techIcon: TailwindCSS },
+      { techName: "AWS Lambda", techIcon: AWSLambda },
+      { techName: "AWS S3", techIcon: AWSS3 },
+      { techName: "DynamoDB", techIcon: AWSDynamoDB },
+      { techName: "API Gateway", techIcon: AWSApiGateway },
     ],
     highlights: [
       "Files uploaded directly to S3 via pre-signed URLs — backend never handles file bytes",
@@ -103,13 +111,13 @@ export const projects: Project[] = [
     accentClassName: "bg-teal-500",
     Icon: Ticket,
     homePageTechStack: [
-      "React.js",
-      "Redux",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Socket.io",
+      { techName: "React.js", techIcon: ReactJS },
+      { techName: "Redux", techIcon: ReduxIcon },
+      { techName: "Node.js", techIcon: NodeJS },
+      { techName: "Tailwind CSS", techIcon: TailwindCSS },
+      { techName: "Express.js", techIcon: ExpressJS },
+      { techName: "MongoDB", techIcon: MongoDB },
+      { techName: "Socket.io", techIcon: SocketIO },
     ],
     highlights: [
       "Event creation dashboard for organisers with rich event details and ticket tier management",

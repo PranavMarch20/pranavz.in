@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import type { Project } from "@/data/projects";
 import { Tooltip } from "../common/tooltip";
+import { TechBadge } from "./tech-badge";
 
 type ProjectItemProps = {
   project: Project;
@@ -48,8 +49,13 @@ export function ProjectItem({ project }: ProjectItemProps) {
           </div>
         </h3>
         <p className="mt-1 text-[14px] font-normal leading-[22.75px] text-muted-foreground">
-          {project.description}
+          {project.shortDescription}
         </p>
+        <div className="mt-3 flex flex-wrap gap-2">
+          {project.homePageTechStack.map((tech) => (
+            <TechBadge key={tech}>{tech}</TechBadge>
+          ))}
+        </div>
         
       </div>
     </li>

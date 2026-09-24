@@ -5,11 +5,13 @@ export type Project = {
   slug: string;
   name: string;
   subtitle: string;
+  shortDescription: string;
   description: string;
   href: string;
   github: string;
   accentClassName: string;
   Icon: LucideIcon;
+  homePageTechStack: string[];
   highlights: string[];
   techStack: {
     category: string;
@@ -22,12 +24,22 @@ export const projects: Project[] = [
     slug: "talent-iq",
     name: "Talent IQ",
     subtitle: "Real-time technical interview platform",
+    shortDescription:
+      "Real-time technical interviews with video calls, collaborative coding, and live code execution — all in one platform.",
     description:
       "Talent IQ is a full-stack real-time interview platform built to streamline technical hiring. It combines WebRTC-powered video conferencing with a live collaborative code editor, enabling interviewers and candidates to code together in real time — no screen sharing needed.",
     href: "/projects/talent-iq",
     github: "https://github.com/PranavMarch20/Talent-IQ",
     accentClassName: "bg-blue-500",
     Icon: Video,
+    homePageTechStack: [
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "WebRTC",
+      "Socket.io",
+      "MongoDB",
+    ],
     highlights: [
       "WebRTC peer-to-peer video calls with low-latency signalling via Socket.io",
       "Live collaborative code editor supporting 10+ languages with real-time sync",
@@ -47,12 +59,22 @@ export const projects: Project[] = [
     slug: "24hrcloud",
     name: "24hrCloud.io",
     subtitle: "Serverless ephemeral file-sharing on AWS",
+    shortDescription:
+      "A serverless file-sharing platform that automatically deletes uploaded files after 24 hours using AWS-managed infrastructure.",
     description:
       "24hrCloud.io is a serverless file-sharing platform where uploaded files automatically expire and are deleted after 24 hours. Built entirely on AWS managed services, it requires zero server maintenance and scales to handle any upload volume without provisioning infrastructure.",
     href: "/projects/24hrcloud",
     github: "https://github.com/PranavMarch20/cloud-file-share-platform",
     accentClassName: "bg-orange-500",
     Icon: Cloud,
+    homePageTechStack: [
+      "React.js",
+      "Tailwind CSS",
+      "AWS S3",
+      "AWS Lambda",
+      "DynamoDB",
+      "API Gateway",
+    ],
     highlights: [
       "Files uploaded directly to S3 via pre-signed URLs — backend never handles file bytes",
       "DynamoDB stores file metadata with a TTL attribute for automatic record expiry",
@@ -72,12 +94,23 @@ export const projects: Project[] = [
     slug: "eventify",
     name: "Eventify",
     subtitle: "Full-stack event management and ticketing platform",
+    shortDescription:
+      "A full-stack event platform that handles event creation, ticketing, QR-based check-in, and real-time attendance validation.",
     description:
       "Eventify is a full-stack event management and ticketing platform. Organisers can create and publish events, set ticket tiers, and manage attendees. Buyers receive QR-coded tickets via email that are validated at the venue in real time — eliminating paper tickets and manual check-in lists.",
     href: "/projects/eventify",
     github: "https://github.com/PranavMarch20/kalpathon_eventify",
     accentClassName: "bg-teal-500",
     Icon: Ticket,
+    homePageTechStack: [
+      "React.js",
+      "Redux",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+    ],
     highlights: [
       "Event creation dashboard for organisers with rich event details and ticket tier management",
       "QR code generation per ticket using a unique token stored in MongoDB",

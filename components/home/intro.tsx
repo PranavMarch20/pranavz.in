@@ -6,7 +6,7 @@ const paragraphs = [
 
 export function Intro() {
   return (
-    <section className="space-y-4 text-[15px] font-medium leading-[24.375px] text-half-muted-foreground">
+    <section className="space-y-4 text-[15px] leading-[24.375px] text-half-muted-foreground">
       {paragraphs.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
       ))}

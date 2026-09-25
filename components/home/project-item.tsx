@@ -56,7 +56,7 @@ export function ProjectItem({ project }: ProjectItemProps) {
             const TechIcon = tech.techIcon;
 
             return (
-              <TechBadge key={tech.techName} Icon={TechIcon}><p className="max-w-0 overflow-hidden opacity-0 whitespace-nowrap transition-all duration-300 ease-out group-hover:max-w-32 group-hover:opacity-100 group-focus-visible:max-w-32 group-focus-visible:opacity-100 group-hover:delay-0 group-focus-visible:delay-0">{tech.techName}</p></TechBadge>
+              <TechBadge key={tech.techName} Icon={TechIcon} effect={true}><p className="max-w-0 overflow-hidden opacity-0 whitespace-nowrap transition-all duration-300 ease-out group-hover:max-w-32 group-hover:opacity-100 group-focus-visible:max-w-32 group-focus-visible:opacity-100 group-hover:delay-0 group-focus-visible:delay-0">{tech.techName}</p></TechBadge>
             )
           })}
         </div>

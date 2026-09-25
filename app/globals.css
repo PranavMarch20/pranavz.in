@@ -19,8 +19,8 @@
 
 .dark {
   color-scheme: dark;
-
-  --background: #0a0a0a;
+  /* #0a0a0a */
+  --background: #100F0F;
   --foreground: #FAFAFA;
   --muted-foreground: #a8a29e;
   --half-muted-foreground: #d6d3d1;

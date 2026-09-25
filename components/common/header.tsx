@@ -39,10 +39,10 @@ export function Header() {
                                 isActive ? "text-foreground" : "text-muted-foreground"
                                 } focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus`}
                             >
-                                <Icon
+                                {/* <Icon
                                 aria-hidden="true"
                                 className="size-[16px] stroke-[2.2] mb-0.5 transition-transform duration-200 group-hover:-translate-y-0.5"
-                                />
+                                /> */}
 
                                 <span
                                 className={`inline-block leading-4.5 border-b-2 border-dotted transition-colors ${

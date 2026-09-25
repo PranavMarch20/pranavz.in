@@ -55,7 +55,7 @@ export function HomeHeader() {
           </h1>
 
           <p className="text-[14px] sm:text-[15px] font-medium leading-[24.375px] text-accent">
-            Full Stack &amp; Backend Developer
+            Full Stack Web Developer
           </p>
         </div>
       </div>

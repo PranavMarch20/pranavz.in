@@ -1,9 +1,13 @@
+"use client"
+
 import { Mail, CodeXml } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon } from "../common/icons";
 import { Divider } from "../common/divider";
 import { Tooltip } from "../common/tooltip";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const navigation = [
     { label: "GitHub", href: "https://github.com/pranavmarch20", Icon: GitHubIcon },
@@ -13,15 +17,32 @@ const navigation = [
 ];
 
 export function HomeHeader() {
+  const { resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  const headerImageSrc =
+    resolvedTheme === "dark"
+      ? "/header-image-dark.png"
+      : "/header-image.png";
+
   return (
     <header className="pt-7 sm:pt-14">
       <div className="flex items-center gap-4">
           <Image
-            src="/header-image.png"
+            src={headerImageSrc}
             alt="Pranav Kumar Singh"
             width={48}
             height={48}
             priority
+            unoptimized 
             className="size-12 rounded-md aspect-square shadow-2xl"
           />
         <div className="min-w-0 flex flex-col items-start leading-6">

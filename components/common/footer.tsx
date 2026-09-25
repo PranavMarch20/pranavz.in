@@ -2,7 +2,7 @@ import { GitHubIcon, LinkedInIcon, PranavSignature } from "./icons"
 
 const footerLinks = [
   { label: "GitHub", href: "https://github.com/pranavmarch20", Icon: GitHubIcon },
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/pranvmarch20", Icon: LinkedInIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/pranavmarch20", Icon: LinkedInIcon },
 ];
 
 export function Footer() {

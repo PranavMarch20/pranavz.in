@@ -31,7 +31,7 @@ export function HomeHeader() {
   const headerImageSrc =
     resolvedTheme === "dark"
       ? "/header-image-dark.png"
-      : "/header-image.png";
+      : "/header-image-light.png";
 
   return (
     <header className="pt-7 sm:pt-14">
@@ -43,7 +43,7 @@ export function HomeHeader() {
             height={48}
             priority
             unoptimized 
-            className="size-12 rounded-md aspect-square shadow-2xl"
+            className="size-13 rounded-md aspect-square shadow-2xl border-1 border border-muted-foreground/15 ring-1 ring-muted-foreground/5"
           />
         <div className="min-w-0 flex flex-col items-start leading-6">
           <h1 className="break-words italic sm:not-italic text-2xl sm:text-3xl font-medium tracking-normal text-half-muted-foreground">

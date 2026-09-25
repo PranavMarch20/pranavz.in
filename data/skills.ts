@@ -11,13 +11,13 @@ export type Skill = {
 export const skills: Skill[] = [
   {
     category: "Languages",
-    technologies: "C++, JavaScript, TypeScript, Python, Go, SQL",
+    technologies: "C++, JavaScript, TypeScript, Go, SQL",
     accentClassName: "bg-blue-500",
     Icon: Code,
   },
   {
     category: "Backend",
-    technologies: "Node.js, Express.js, REST APIs, Bun, Prisma, Zod, Auth",
+    technologies: "Node.js, Express.js, REST APIs, Bun, Drizzle, Zod, BetterAuth",
     accentClassName: "bg-orange-500",
     Icon: Server,
   },
@@ -42,7 +42,7 @@ export const skills: Skill[] = [
   },
   {
     category: "Testing & Tools",
-    technologies: "Git, Postman, Jest, React Testing Library, Vitest",
+    technologies: "Git, GitHub, Postman, Jest, React Testing Library, Vitest",
     accentClassName: "bg-amber-500",
     Icon: Wrench,
   },

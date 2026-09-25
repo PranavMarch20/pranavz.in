@@ -7,7 +7,7 @@ import { Tooltip } from "../common/tooltip";
 
 const navigation = [
     { label: "GitHub", href: "https://github.com/pranavmarch20", Icon: GitHubIcon },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/pranvmarch20", Icon: LinkedInIcon },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/pranavmarch20", Icon: LinkedInIcon },
     { label: "Email", href: "mailto:pranavmarch20@gmail.com", Icon: Mail },
     { label: "Codolio", href: "https://codolio.com/profile/pranavmarch20", Icon: CodeXml },
 ];

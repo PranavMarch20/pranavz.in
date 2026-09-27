@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, CodeXml } from "lucide-react";
+import { Mail, CodeXml, Loader2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { GitHubIcon, LinkedInIcon } from "../common/icons";
@@ -24,10 +24,6 @@ export function HomeHeader() {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   const headerImageSrc =
     resolvedTheme === "dark"
       ? "/header-image-dark.png"
@@ -36,7 +32,7 @@ export function HomeHeader() {
   return (
     <header className="pt-7 sm:pt-14">
       <div className="flex items-center gap-4">
-          <Image
+          { mounted ? <Image
             src={headerImageSrc}
             alt="Pranav Kumar Singh"
             width={48}
@@ -44,7 +40,7 @@ export function HomeHeader() {
             priority
             unoptimized 
             className="size-13 rounded-md aspect-square shadow-2xl border-1 border border-muted-foreground/15 ring-1 ring-muted-foreground/5"
-          />
+          /> : <div className="size-13 rounded-md aspect-square shadow-2xl border-1 border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center"><Loader2 className="size-4 animate-spin"/></div> }
         <div className="min-w-0 flex flex-col items-start leading-6">
           <h1 className="break-words italic sm:not-italic text-2xl sm:text-3xl font-medium tracking-normal text-half-muted-foreground">
             Pranav Kumar Singh

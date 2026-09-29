@@ -1,6 +1,6 @@
 import { AchievementsSection } from "@/components/home/achievements-section";
 import { Divider } from "@/components/common/divider";
-import { HomeHeader } from "@/components/home/home-header";
+import { HomeHeader2 } from "@/components/home/home-header2";
 import { SectionLabel } from "@/components/home/section-label";
 import { SkillsSection } from "@/components/home/skills-section";
 import { ProjectsSection } from "@/components/home/projects-section";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen px-5 sm:px-6">
       <div className="mt-5 sm:mt-0">
-        <HomeHeader />
+        <HomeHeader2 />
 
         <Divider />
 

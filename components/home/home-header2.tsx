@@ -30,7 +30,8 @@ export function HomeHeader2() {
       : "/header-image-light.png";
 
   return (
-    <header className="pt-10 sm:pt-18">
+    // className="pt-10 sm:pt-18"
+    <header className="-mt-12"> 
       <div className="flex flex-col items-start gap-4">
           { mounted ? <Image
             src={headerImageSrc}
@@ -39,8 +40,8 @@ export function HomeHeader2() {
             height={48}
             priority
             unoptimized 
-            className="size-20 rounded-3xl aspect-circle shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 mb-2"
-          /> : <div className="size-13 rounded-md aspect-square shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center"><Loader2 className="size-4 animate-spin"/></div> }
+            className="size-20 rounded-full aspect-square z-10 shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 mb-2"
+          /> : <div className="size-20 rounded-3xl aspect-square shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center mb-2"><Loader2 className="size-4 animate-spin"/></div> }
           <div className="min-w-0 flex flex-col items-start leading-6 mb-3">
             <h1 className="wrap-break-words text-2xl sm:text-3xl font-bold tracking-normal text-foreground">
               Hi, I'm Pranav
@@ -56,7 +57,7 @@ export function HomeHeader2() {
         <a
           href="/resume.pdf"
           download="Pranav_Resume.pdf"
-          className="inline-flex items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-1 rounded-lg align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-foreground/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-xs border border-2 border-accent/30 ring-2 ring-foreground/2 ring-offset-2 ring-offset-muted-foreground/4 ring-inset"
+          className="inline-flex items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-1 rounded-xl align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-foreground/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-xs border border-2 border-accent/30 ring-2 ring-foreground/2 ring-offset-2 ring-offset-muted-foreground/4 ring-inset"
         >
           <FileUser className="size-4 rotate-10" />
           <span>Resume / CV</span>
@@ -67,7 +68,7 @@ export function HomeHeader2() {
           target="_parent"
           rel="noopener noreferrer"
         >
-          <button className="inline-flex items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-1 rounded-lg bg-foreground/97 align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-background/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-md border border-1 border-background/80 ring-2 ring-background/5 ring-offset-2 ring-offset-background/10 ring-inset"><Send className="size-4 rotate-5" /><span>Get in touch</span></button>
+          <button className="inline-flex items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-1 rounded-xl bg-foreground/97 align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-background/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-md border border-1 border-background/80 ring-2 ring-background/5 ring-offset-2 ring-offset-background/10 ring-inset"><Send className="size-4 rotate-5" /><span>Get in touch</span></button>
         </Link>
                       
       </div>

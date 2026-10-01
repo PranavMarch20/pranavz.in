@@ -34,7 +34,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: {
-    default: "Pranav Kumar Singh - Full Stack Developer",
+    default: "Pranav Kumar Singh - Full Stack Web Developer",
     template: "%s - Pranav Kumar Singh",
   },
 
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Pranav Kumar Singh - Full Stack Developer",
+    title: "Pranav Kumar Singh - Full Stack Web Developer",
 
     description:
       "Portfolio of Pranav Kumar Singh, a Full Stack and Backend Developer building scalable web applications.",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Pranav Kumar Singh - Full Stack Developer",
+        alt: "Pranav Kumar Singh - Full Stack Web Developer",
       },
     ],
 
@@ -93,7 +93,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "Pranav Kumar Singh - Full Stack Developer",
+    title: "Pranav Kumar Singh - Full Stack Web Developer",
 
     description:
       "Portfolio of Pranav Kumar Singh, a Full Stack and Backend Developer building scalable web applications.",

@@ -10,7 +10,7 @@ export function HeaderTopImage() {
         height={310}
         priority
         unoptimized
-        className="w-full h-auto opacity-95"
+        className="sm:w-full sm:h-auto h-50 object-cover opacity-97"
         style={{
           maskImage: `
             radial-gradient(

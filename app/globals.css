@@ -85,29 +85,24 @@ a {
   color: var(--foreground);
 }
 
-::view-transition-old(root) {
-  animation-delay: 600ms
-}
-::view-transition-new(root) {
-  animation: circle-in 600ms ease-in-out;
-}
-
-
-@keyframes circle-in {
-  from {
-    clip-path: circle(0% at 50% 50%);
-    filter: blur(5px);
-    opacity: 0.9;
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation-delay: 600ms;
   }
-  to {
-    clip-path: circle(160% at 50% 50%);
-    filter: blur(0px);
-    opacity: 1;
+  ::view-transition-new(root) {
+    animation: circle-in 600ms ease-in-out;
+  }
+
+  @keyframes circle-in {
+    from {
+      clip-path: circle(0% at 50% 50%);
+      filter: blur(3px);
+      opacity: 0.9;
+    }
+    to {
+      clip-path: circle(120% at 50% 50%);
+      filter: blur(0px);
+      opacity: 1;
+    }
   }
 }
-
-/* 
-@keyframes circle-out {
-  from { clip-path: circle(100% at 50% 50%); }
-  to { clip-path: circle(0% at 50% 50%); }
-} */

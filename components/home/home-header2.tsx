@@ -31,8 +31,9 @@ export function HomeHeader2() {
 
   return (
     // className="pt-10 sm:pt-18"
-    <header className="-mt-12"> 
+    <header className="-mt-8"> 
       <div className="flex flex-col items-start gap-4">
+          <div className="bg-background/95 backdrop-blur-xl rounded-full p-1">
           { mounted ? <Image
             src={headerImageSrc}
             alt="Pranav Kumar Singh"
@@ -40,9 +41,10 @@ export function HomeHeader2() {
             height={48}
             priority
             unoptimized 
-            className="size-20 rounded-full aspect-square z-10 shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 mb-2"
-          /> : <div className="size-20 rounded-3xl aspect-square shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center mb-2"><Loader2 className="size-4 animate-spin"/></div> }
-          <div className="min-w-0 flex flex-col items-start leading-6 mb-3">
+            className="size-20 rounded-full aspect-square z-10 shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 mb-0"
+          /> : <div className="size-20 rounded-full aspect-square shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center mb-0"><Loader2 className="size-4 animate-spin"/></div> }
+          </div>
+          <div className="min-w-0 flex flex-col items-start leading-6 mb-3 mt-2">
             <h1 className="wrap-break-words text-2xl sm:text-3xl font-bold tracking-normal text-foreground">
               Hi, I'm Pranav
               {" — "}

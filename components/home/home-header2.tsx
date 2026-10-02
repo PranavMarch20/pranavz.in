@@ -32,18 +32,45 @@ export function HomeHeader2() {
   return (
     // className="pt-10 sm:pt-18"
     <header className="-mt-8"> 
-      <div className="flex flex-col items-start gap-4">
-          <div className="bg-background/95 backdrop-blur-xl rounded-full p-1">
-          { mounted ? <Image
-            src={headerImageSrc}
-            alt="Pranav Kumar Singh"
-            width={48}
-            height={48}
-            priority
-            unoptimized 
-            className="size-20 rounded-full aspect-square z-10 shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 mb-0"
-          /> : <div className="size-20 rounded-full aspect-square shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center mb-0"><Loader2 className="size-4 animate-spin"/></div> }
+      <div className="flex flex-col items-start gap-3">
+        <div className="flex flex-row items-center w-full">
+          <div className="bg-background/95 backdrop-blur-xl rounded-full p-1 flex-shrink-0">
+            { mounted ? <Image
+              src={headerImageSrc}
+              alt="Pranav Kumar Singh"
+              width={48}
+              height={48}
+              priority
+              unoptimized 
+              className="size-20 sm:size-22 rounded-full aspect-square z-10 shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 mb-0"
+            /> : <div className="size-20 sm:size-22 rounded-full aspect-square shadow-2xl border border-muted-foreground/15 ring-1 ring-muted-foreground/5 flex items-center justify-center mb-0"><Loader2 className="size-4 animate-spin"/></div> }
           </div>
+
+          <nav aria-label="Primary navigation" className="mt-7 mr-2 ml-auto">
+            <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[14px] leading-[22.75px]">
+              <li className="flex flex-col">
+                <ul className="flex flex-wrap gap-2 items-center cursor-pointer">
+                  {navigation.map(({ href, Icon, label }) => (
+                    <li key={label} className="group bg-accent/10 rounded-full border border-accent/15 shadow-xs ring-2 ring-accent/5">
+                      <Tooltip message={`${label}`}>
+                        <Link
+                          href={href}
+                          className="transition-transform duration-200 group-hover:-translate-y-0.5 inline-flex items-center gap-1 py-2 px-[8px] font-medium text-nav-link transition-colors hover:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Icon aria-hidden="true" className="size-4.5 stroke-[2.2]" />
+                        </Link>
+                      </Tooltip>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+          
           <div className="min-w-0 flex flex-col items-start leading-6 mb-3 mt-2">
             <h1 className="wrap-break-words text-2xl sm:text-3xl font-bold tracking-normal text-foreground">
               Hi, I'm Pranav
@@ -77,28 +104,7 @@ export function HomeHeader2() {
 
       {/* <Divider className="!my-3 max-w-[470px]"/> */}
  
-      <nav aria-label="Primary navigation" className="mt-4">
-        <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[14px] leading-[22.75px]">
-          <li className="flex flex-col">
-            <ul className="flex flex-wrap gap-1 items-center cursor-pointer">
-              {navigation.map(({ href, Icon, label }) => (
-                <li key={label} className="group">
-                  <Tooltip message={`${label}`}>
-                    <Link
-                      href={href}
-                      className="transition-transform duration-200 group-hover:-translate-y-0.5 inline-flex items-center gap-1 bg-accent/10 rounded-full py-2 px-[9px] font-medium text-nav-link transition-colors hover:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon aria-hidden="true" className="size-4.5 stroke-[2.2]" />
-                    </Link>
-                  </Tooltip>
-                </li>
-              ))}
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      
     </header>
   );
 }

@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Pranav Kumar Singh, a Full Stack and Backend Developer building scalable web applications.",
 
-    images: ["/og-image.png"],
+    images: ["/header-image-dark.png"],
   },
 
   robots: {

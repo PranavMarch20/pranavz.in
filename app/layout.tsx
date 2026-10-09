@@ -79,7 +79,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "/header-image-dark.png",
         width: 1200,
         height: 630,
         alt: "Pranav Kumar Singh - Full Stack Web Developer",

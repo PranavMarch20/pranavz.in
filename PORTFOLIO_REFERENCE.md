@@ -6,10 +6,6 @@ Primary reference:
 
 https://pranavz.in/
 
-Unmasked reference used for structural/content inspection:
-
-https://4iku0x9x1n.c35.airoapp.ai/
-
 The screenshots supplied with this task show the exact visual appearance of the
 reference website.
 

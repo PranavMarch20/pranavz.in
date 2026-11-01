@@ -29,7 +29,7 @@ export function Tooltip({ message, children, className }: TooltipProps) {
         group-hover/tooltip:scale-100 
         group-hover/tooltip:delay-50
       `}>
-        <div className={`relative flex justify-center pb-2 ${message === "GitHub" ? "ml-8" : ""}`}>
+        <div className={`relative flex justify-center pb-2 ${message === "Codolio" ? "mr-5" : ""}`}>
           <span className="absolute bottom-full z-50 translate-y-2 w-max max-w-[200px] rounded-md bg-tooltip px-3 py-0.5 text-[11.5px] tracking-wide text-background text-center break-words">
             {message}
           </span>

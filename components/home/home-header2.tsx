@@ -34,7 +34,7 @@ export function HomeHeader2() {
     <header className="-mt-8"> 
       <div className="flex flex-col items-start gap-3">
         <div className="flex flex-row items-center w-full">
-          <div className="bg-background/95 backdrop-blur-xl rounded-full p-1 flex-shrink-0">
+          <div className="bg-background/95 backdrop-blur-xl rounded-full p-1 shrink-0">
             { mounted ? <Image
               src={headerImageSrc}
               alt="Pranav Kumar Singh"
@@ -51,11 +51,11 @@ export function HomeHeader2() {
               <li className="flex flex-col">
                 <ul className="flex flex-wrap gap-1.5 sm:gap-2 items-center cursor-pointer">
                   {navigation.map(({ href, Icon, label }) => (
-                    <li key={label} className="group bg-accent/10 rounded-full border border-accent/15 shadow-xs ring-2 ring-accent/5">
+                    <li key={label} className="bg-accent/10 rounded-full border border-accent/15 shadow-xs ring-2 ring-accent/5">
                       <Tooltip message={`${label}`}>
                         <Link
                           href={href}
-                          className="transition-transform duration-200 group-hover:-translate-y-0.5 inline-flex items-center gap-1 p-1.5 sm:py-2 sm:px-[8px] font-medium text-nav-link transition-colors hover:text-muted-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
+                          className="duration-200 inline-flex items-center gap-1 p-1.5 sm:py-2 sm:px-[8px] font-medium text-nav-link transition-colors hover:text-muted-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

@@ -4,7 +4,7 @@ export function HeaderTopImage() {
   return (
     <div className="relative w-full max-w-[680px] z-0 mb-0 rounded-md overflow-hidden">
       <Image
-        src="/lf.png"
+        src="/header-top.png"
         alt="Pranav Kumar Singh"
         width={680}
         height={310}

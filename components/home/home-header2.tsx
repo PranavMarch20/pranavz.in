@@ -86,7 +86,7 @@ export function HomeHeader2() {
         <a
           href="/resume.pdf"
           download="Pranav_Resume.pdf"
-          className="inline-flex items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-1 rounded-xl align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-foreground/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-xs border border-2 border-accent/30 ring-2 ring-foreground/2 ring-offset-2 ring-offset-muted-foreground/4 ring-inset"
+          className="inline-flex items-center justify-center transition-transform hover:-translate-y-[1px] active:translate-y-[1px] gap-1 rounded-xl align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-foreground/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-xs border border-2 border-accent/30 ring-2 ring-foreground/2 ring-offset-2 ring-offset-muted-foreground/4 ring-inset"
         >
           <FileUser className="size-4 rotate-10" />
           <span>Resume / CV</span>
@@ -97,7 +97,7 @@ export function HomeHeader2() {
           target="_parent"
           rel="noopener noreferrer"
         >
-          <button className="inline-flex items-center justify-center transition-transform hover:-translate-y-0.5 active:translate-y-0.5 gap-1 rounded-xl bg-foreground/97 align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-background/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-md border border-1 border-background/80 ring-2 ring-background/5 ring-offset-2 ring-offset-background/10 ring-inset"><Send className="size-4 rotate-5" /><span>Get in touch</span></button>
+          <button className="inline-flex items-center justify-center transition-transform hover:-translate-y-[1px] active:translate-y-[1px] gap-1 rounded-xl bg-foreground/97 align-middle cursor-pointer px-3 py-1.5 text-[13px] font-medium leading-[22.75px] text-background/95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus shadow-md border border-1 border-background/80 ring-2 ring-background/5 ring-offset-2 ring-offset-background/10 ring-inset"><Send className="size-4 rotate-5" /><span>Get in touch</span></button>
         </Link>
                       
       </div>

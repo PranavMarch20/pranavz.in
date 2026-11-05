@@ -79,7 +79,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/header-image-dark.png",
+        url: "/share-thumbnail.png",
         width: 1200,
         height: 630,
         alt: "Pranav Kumar Singh - Full Stack Web Developer",
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Pranav Kumar Singh, a Full Stack and Backend Developer building scalable web applications.",
 
-    images: ["/header-image-dark.png"],
+    images: ["/share-thumbnail.png"],
   },
 
   robots: {
